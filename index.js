@@ -6,8 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ✅ Richtige Kanal-ID von "sawlties"
-const CHANNEL_ID = "UCQ1_h1cnE9ATnjEP_21N2oA";
-const FEED_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+const USERNAME = "sawlties";
+const FEED_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${USERNAME}`;
 
 app.get("/", async (req, res) => {
   try {
@@ -43,3 +43,4 @@ app.get("/", async (req, res) => {
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
 });
+
